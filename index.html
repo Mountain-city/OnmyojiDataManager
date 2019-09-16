@@ -91,7 +91,7 @@
         },
         created () {
             var _this = this
-            getJSON("./database/yyx_guild_snapshot_20190901164824_15005_6814.json").then(function (res) {
+            getJSON("./database/yyx_guild_snapshot.json").then(function (res) {
                 _this.tableData = res.data.members || []
                 _this.loading = false
                 document.title = res.timestamp
